@@ -21,6 +21,13 @@ class misc(commands.Cog):
     def __init__(self, bot: commands.Bot) -> None:
         self.bot = bot
         self.DB = bot.DB
+    
+    @commands.command(aliases=["sponsorachild", "rum", "tiki", "jack])
+    async def tiki(self, ctx):
+        """Another great push request by Justin"""
+        await ctx.send("""Please buy us Tiki Fire rum: https://www.clickndrink.co.uk/shop/spirits/rum/old-j-tiki-fire-spiced-rum-70cl/""")
+
+        
 
     @commands.command()
     async def nato(self, ctx, *, text):
